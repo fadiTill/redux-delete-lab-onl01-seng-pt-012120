@@ -3,15 +3,14 @@ import Band from './Band'
 
 
 const Bands = props => {
-    const bands = props.bands.map(band => <Band key={band.id}  {...band} deleteBand= {props.deleteBand}/>)
+    const bands = props.bands.map(band => <Band key={band.id} {...band} deleteBand={props.deletedBand}/>)
+    // renderTodos = () => this.props.todos.map((todo, id) => <Todo key={id} text={todo} />)
 
 
 
     return(
         <div>
-          {/* Band Component */}
           {bands}
-      
         </div>
       );
     };
